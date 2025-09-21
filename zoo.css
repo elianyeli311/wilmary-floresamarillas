@@ -1,0 +1,57 @@
+body {
+ display: grid;
+    place-content: center;
+     min-height: 100vh;
+    min-width: 100vw;
+    height: 100vh;
+    width: 100vw;
+	overflow: hidden;
+	
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  background-image: url(wallpaperflare.com_wallpaper.jpg);
+}
+
+.lov {
+  background-color: rgb(206, 53, 104);
+  width: 95vw;
+  max-width: 340px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 0 25px rgba(122, 45, 124, 0.856);
+  position: relative;
+}
+
+.love .img{
+ height: 300px;
+    width: 250px;
+}
+
+button{
+font-weight: 700;
+    width: 60px;
+height: 30px;
+border: none;
+border-radius: 7px;
+background-color: rgb(19, 231, 196);
+}
+
+#musicBtn {
+  width: 120px;
+  height: 120px;
+  background: url('x.jpg') no-repeat center center;
+  background-size: contain;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 1000;
+}
+#musicBtn.playing {
+  filter: brightness(0.7);
+}

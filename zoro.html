@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="zoo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flores amarillas para ti</title>
+    <audio id="back" src="promise.mp3" loop></audio>
+</head>
+<body>
+    <button id="musicBtn"></button>
+
+    <div class="lov">
+        <img src="Copilot_20250920_234523.png" width="300px">
+        <h3>Aqui te dejo tus flores amarillas y una musicita de laufey </h3>
+        <h2>Te amo bacteria andante </h2>
+        
+    </div>
+<script>
+const musicBtn = document.getElementById('musicBtn');
+const backAudio = document.getElementById('back');
+let isPlaying = false;
+
+musicBtn.addEventListener('click', function() {
+  if (!isPlaying) {
+    backAudio.play();
+    musicBtn.classList.add('playing');
+    isPlaying = true;
+  } else {
+    backAudio.pause();
+    musicBtn.classList.remove('playing');
+    isPlaying = false;
+  }
+});
+</script>
+  
+</body>
+</html>
